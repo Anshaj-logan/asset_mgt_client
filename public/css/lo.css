@@ -1,0 +1,94 @@
+/* .class{
+        margin-left: 20px;
+    } */
+.page{
+        background-color: black;
+        margin-top: -550px;
+        opacity: 0.9;
+        width: 400px;
+        height: 450px;
+        margin-left: 500px;
+    }
+
+h3{
+        color: white;
+        text-align: center;
+    }
+
+.headingsContainer{
+        text-align: center;
+    }
+
+.headingsContainer p{
+        color: white;
+    }
+
+.mainContainer{
+        padding: 16px;
+    }
+
+.mainContainer{
+    padding: 16px;
+    }
+
+.subcontainer{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.subcontainer a{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+/* span.forgotpsd a {
+        float: right;
+        color: white;
+        padding-top: 16px;
+    } */
+
+.forgotpsd a{
+    margin-top: 48px;
+        color: rgb(74, 146, 235);
+    }
+  
+.forgotpsd a:link{
+        text-decoration: none;
+    }
+input[type=text], input[type=password]{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+button {
+        background-color: rgb(233, 164, 36);
+        color: black;
+        padding: 14px 20px;
+        border-radius: 5px;
+        margin: 7px 0;
+        width: 100%;
+        font-size: 18px;
+    }
+p{
+        color: white;
+    }
+.forgotpsd a{
+    color: rgb(74, 146, 235);
+}
+.register{
+        color: white;
+        text-align: center;
+    }
+  
+.register a{
+    color: rgb(74, 146, 235);
+    }
+  
+
+
+
