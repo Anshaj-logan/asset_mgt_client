@@ -19,6 +19,8 @@ import Suggetion from '../../pages/Student/Suggetion'
 import StCom from '../../pages/STAFF/StCom'
 import StSuggetion from '../../pages/STAFF/StSuggetion'
 import Alloc from '../Alloca/Alloc'
+import StaffRegistration from '../Registration/StaffRegistration'
+import WorkerRegistration from '../Registration/WorkerRegistration'
 
 
 const MainRouter = () => {
@@ -34,6 +36,8 @@ const MainRouter = () => {
             <Route path='/user' element={<HomeUser/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/registration' element={<Registration/>}/>
+            <Route path='/staff-reg' element={<StaffRegistration/>}/>
+            <Route path='/worker-reg' element={<WorkerRegistration/>}/>
             <Route path='/homestaff' element={<Home/>}/>
             <Route path='/alloc' element={<Alloc/>}/>
 
