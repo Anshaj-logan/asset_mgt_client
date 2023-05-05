@@ -14,39 +14,28 @@ const STSuggetion = () => {
         enctype="multipart/form-data"
       >
         <p>Suggestion!!</p>
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Department</span> */}
+       
           <input
             name="name"
             type="text"
             class="form-control"
             placeholder="Department"
           />
-        {/* </label> */}
-
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Year</span> */}
+        
           <input
             name="name"
             type="text"
             class="form-control"
-            placeholder="Year"
+            placeholder="Class"
           />
-        {/* </label> */}
-
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Student Name</span> */}
           <input
             name="name"
             type="text"
             class="form-control"
             placeholder="Staff Name"
           />
-        {/* </label> */}
-
         <div class="form-outline mb-4">
-    <textarea class="form-control" id="form4Example3" rows="4" placeholder='Suggetion'></textarea>
-    {/* <label class="form-label" for="form4Example3">Message</label> */}
+    <textarea class="form-control" id="form4Example3" rows="4" placeholder='Suggestion'></textarea>
   </div>
 
         <div class="mb-4">

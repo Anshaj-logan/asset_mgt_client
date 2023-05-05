@@ -1,20 +1,22 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-// import Menusection from '../../components/Menusection'
 import Nav from '../../components/Nav'
-// import Section from '../../components/Section'
-// import Topbar from '../../components/Topbar'
+import Topbar from '../../components/Topbar'
+import Footer from '../../components/Footer/Footer'
 // import Welcome from '../../components/Welcome'
 
 const Home = () => {
   return (
   
     <div>
-      {/* <Topbar/> */}
-    <Header/>
+     {/* <Topbar/> */}
+
+     <Header/>
     <section id="hero" className="d-flex align-items-center">
 <Nav/>
 </section>
+<Footer/>
+
 
 
     

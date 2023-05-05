@@ -24,13 +24,13 @@ const Header = () => {
             </a>
           </li>
           <li><a class="nav-link scrollto active" href="">
-            <Link to={'/allocation'}>Allocation</Link></a></li>
+            <Link to={'/alloc'}>Allocation</Link></a></li>
 
-
-          <li><a class="nav-link scrollto" href="#newasset">
+            <li><a class="nav-link scrollto" href="#newasset">
             <Link to={'/newasset'}>New Assets</Link> </a></li>
+        
 
-          <li><a class="nav-link scrollto" href="#status">
+          <li><a class="nav-link scrollto" href="">
           <Link to={'/status'}>Status</Link></a></li>
 
           <li><a class="nav-link scrollto" href="">
@@ -42,23 +42,19 @@ const Header = () => {
               <li class="dropdown"><a href="#"><span>Complaint</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">
-                  <Link to={'/complaint'}>Staff Complaint </Link></a></li>
-                  <li><a href="#">view Student Complaint</a>
+                  <Link to={'/stcomplaint'}>Staff Complaint </Link></a></li>
+                  <li><a href="#"><Link to={'/viewstdcom'}>view Student Complaint</Link></a>
                   </li>
                 </ul>
               </li>
               
-              <li class="dropdown"><a href="#"><span>Suggetion</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="#"><Link to={'/stsuggetion'}><span>Suggetion</span></Link> <i class="bi bi-chevron-right"></i></a>
                 
               </li>
             </ul>
           </li>
 {/*     
-          <li>
-            <a className="nav-link scrollto" href="#contact">
-              Contact
-            </a>
-          </li> */}
+           */}
         </ul>
         <i className="bi bi-list mobile-nav-toggle" />
       </nav>

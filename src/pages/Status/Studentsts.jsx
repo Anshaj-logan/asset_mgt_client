@@ -1,19 +1,16 @@
 import React from 'react'
-import Nav from '../../components/Nav'
 import HeaderStudent from '../../components/Header/HeaderStudent'
 import Footer from '../../components/Footer/Footer'
+import Studentstatus from '../../components/Status/Studentstatus'
 
-const HomeStudent = () => {
+const Studentsts = () => {
   return (
     <div>
         <HeaderStudent/>
-        <section id="hero" className="d-flex align-items-center">
-            <Nav/>
-        </section>
+        <Studentstatus/>
         <Footer/>
-
     </div>
   )
 }
 
-export default HomeStudent
+export default Studentsts

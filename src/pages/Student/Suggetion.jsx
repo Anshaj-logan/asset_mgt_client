@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
 import Suggestion from '../../components/Student/Suggestion'
+import Footer from '../../components/Footer/Footer'
+import HeaderStudent from '../../components/Header/HeaderStudent'
 
 const Suggetion = () => {
   return (
     <div className='stsgtn'>
-        <Header/>
+      <HeaderStudent/>
        <Suggestion/>
+       <Footer/>
     </div>
   )
 }

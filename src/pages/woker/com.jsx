@@ -1,19 +1,16 @@
 import React from 'react'
 import HeaderWorker from '../../components/Header/HeaderWorker'
-import Nav from '../../components/Nav'
 import Footer from '../../components/Footer/Footer'
+import Viewcom from '../../components/Worker/Viewcom'
 
-const Homeworker = () => {
+const com = () => {
   return (
     <div>
         <HeaderWorker/>
-        <section id="hero" className="d-flex align-items-center">
-            <Nav/>
-        </section>
+        <Viewcom/>
         <Footer/>
-
     </div>
   )
 }
 
-export default Homeworker
+export default com

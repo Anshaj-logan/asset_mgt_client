@@ -4,140 +4,122 @@ const Gall = () => {
    
   return (
 
-    <>
-
-    <div className="container" data-aos="fade-up">
-      <div className="section-title">
-        <h2>Gallery</h2>
-        <p>Some photos from Our Assets</p>
+    <div className="row">
+    <div className="col-md-12">
+      <div id="mdb-lightbox-ui" />
+      <div className="mdb-lightbox no-margin">
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photwebpos/Horizontal/Nature/12-col/img%20(117)."
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
+        <figure className="col-md-4">
+          <a
+            href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).webp"
+            data-size="1600x1067"
+          >
+            <img
+              alt="picture"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).webp"
+              className="img-fluid"
+            />
+          </a>
+        </figure>
       </div>
     </div>
-    <div className="container-fluid" data-aos="fade-up" data-aos-delay={100}>
-      <div className="row g-0">
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4">
-          <div className="gallery-item">
-            <a
-              href="img/empty-classroom-due-coronavirus-pandemic (1)"
-              className="gallery-lightbox"
-              data-gall="gallery-item"
-            >
-              <img
-                src="img/empty-classroom-due-coronavirus-pandemic (1)"
-                alt=""
-                className="img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </>
+  </div>
+  
   )
 }
 

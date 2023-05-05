@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import NewAsset from '../../components/Newasset/NewAsset'
 
-const Status = () => {
+const Newassets = () => {
   return (
     <div>
-       <Header/>
-       <Footer/>
-              
+        <Header/>
+        <NewAsset/>
+        <Footer/>
     </div>
   )
 }
 
-export default Status
+export default Newassets

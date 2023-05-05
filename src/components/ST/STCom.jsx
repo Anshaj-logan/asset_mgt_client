@@ -16,40 +16,35 @@ const STCom = () => {
         enctype="multipart/form-data"
       >
         <p>Complaint!!</p>
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Department</span> */}
           <input
             name="name"
             type="text"
             class="form-control"
             placeholder="Department"
           />
-        {/* </label> */}
-
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Year</span> */}
+        
           <input
             name="name"
             type="text"
             class="form-control"
-            placeholder="Year"
+            placeholder="Class"
           />
-        {/* </label> */}
-
-        {/* <label class="d-block mb-4">
-          <span class="d-block mb-2">Student Name</span> */}
           <input
             name="name"
             type="text"
             class="form-control"
-            placeholder="Student Name"
+            placeholder="Room Number"
           />
-        {/* </label> */}
-
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Staff Name"
+          />
         <div class="form-outline mb-4">
-    <textarea class="form-control" id="form4Example3" rows="4" placeholder='Suggetion'></textarea>
-    {/* <label class="form-label" for="form4Example3">Message</label> */}
+    <textarea class="form-control" id="form4Example3" rows="4" placeholder='Complaint'></textarea>
   </div>
+  <input type="file" class="form-control-file" id="exampleFormControlFile1"/>
 
         <div class="mb-4">
           <button type="submit" class="btn btn-primary px-3">Submit</button>
