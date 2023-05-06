@@ -1,16 +1,19 @@
 
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import HeaderWorker from "../Header/HeaderWorker";
+import { useNavigate } from "react-router";
 
 
 
 const Viewcom = () => {
   const [complaint, setcomplaint] = useState([]);
-
+  const navigate = useNavigate()
+ const worker_id = localStorage.getItem("worker_id")
   const accept = (id)=>{
     console.log(id);
-    axios.get(``)
-
+    axios.get(`http://localhost:2000/api/complaint/accept-student-complaints/${id}/${worker_id}`)
+    navigate('/students-accepted-complaint')
     }
 
 
@@ -28,9 +31,13 @@ const Viewcom = () => {
   }, []);
   console.log("data", complaint);
   return (
+
     <div>
         <div className="asset">
+          <HeaderWorker/>
   {/*Table*/}
+  <div className="container-fluid">
+    <div style={{width:"90%",margin:"auto"}}>
   <table className="table">
     {/*Table head*/}
     <thead>
@@ -63,9 +70,12 @@ const Viewcom = () => {
         <td>{data.room_number}</td>
         <td>{data.complaint}</td>
         <td><img src={`Complaint/${data.image}`} alt="" width="100" height="100" /></td>
-        <td><button type="button" class="btn btn-success"
+        <td>{data.status==="0" ? <button type="button" class="btn btn-success"
         onClick={()=>{accept(data._id)}}
-        >Accept</button></td>
+        >Accept</button> : data.status==="1" ? <button type="button" disabled class="btn btn-success">Accepted</button> : 
+        <button type="button" class="btn btn-success">Completed</button>}
+          
+        </td>
       </tr>
 
       ))}
@@ -74,6 +84,9 @@ const Viewcom = () => {
     </tbody>
     {/*Table body*/}
   </table>
+  </div>
+  </div>
+  
   {/*Table*/}
 </div>
 

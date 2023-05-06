@@ -22,6 +22,10 @@ import Viewcom from '../Worker/Viewcom'
 import ViewStdCom from '../../pages/STAFF/ViewStdCom'
 import StaffRegistration from '../Registration/StaffRegistration'
 import WorkerRegistration from '../Registration/WorkerRegistration'
+import ViewStudentCom from '../Worker/ViewStudentCom'
+import AddComplaints from '../ST/AddComplaints'
+import ViewStaffsComplaints from '../Worker/ViewStaffsComplaints'
+import ViewStaffAcceptedCom from '../Worker/ViewStaffAcceptedCom'
 
 
 const MainRouter = () => {
@@ -53,6 +57,11 @@ const MainRouter = () => {
 
             <Route path='/homeworker' element={<Homeworker/>}/>
             <Route path='/viewcomplaint' element={<Viewcom/>}/>
+            <Route path='/view-staffs-complaint' element={<ViewStaffsComplaints/>}/>
+            <Route path='/students-accepted-complaint' element={<ViewStudentCom/>}/>
+            <Route path='/staffss-accepted-complaint' element={<ViewStaffAcceptedCom/>}/>
+
+            <Route path='/worker-add-complaint' element={<AddComplaints/>}/>
 
 
         </Routes>

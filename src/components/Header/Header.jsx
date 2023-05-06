@@ -37,7 +37,14 @@ const Header = () => {
 
             <li><a class="nav-link scrollto" href="#newasset">
             <Link to={'/newasset'}>New Assets</Link> </a></li>
-        
+            <li class="dropdown"><a href="#"><span>Complaint</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+             
+             
+              <li class="dropdown"><a href="#"><Link to={'/worker-add-complaint'}>Add Complaint</Link> <i class="bi bi-chevron-right"></i></a></li>
+              <li class="dropdown"><a href="#"><Link to={'/viewstdcom'}>view Student Complaint</Link> <i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+          </li>
 
           <li><a class="nav-link scrollto" href="">
           <Link to={'/status'}>Status</Link></a></li>
@@ -46,22 +53,7 @@ const Header = () => {
           <Link to={'/gallery'}>Gallery</Link> </a></li>
 
 
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Complaint</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">
-                  <Link to={'/stcomplaint'}>Staff Complaint </Link></a></li>
-                  <li><a href="#"><Link to={'/viewstdcom'}>view Student Complaint</Link></a>
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="dropdown"><a href="#"><Link to={'/stsuggetion'}><span>Suggetion</span></Link> <i class="bi bi-chevron-right"></i></a>
-                
-              </li>
-            </ul>
-          </li>
+        
           <li>
             <a className="nav-link scrollto"  onClick={logout} >
               Logout

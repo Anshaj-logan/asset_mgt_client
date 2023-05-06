@@ -22,15 +22,36 @@ const HeaderWorker = () => {
          
           <li>
             <a className="nav-link scrollto" href="#about" >
-             <Link to={'/about'}>Home</Link> 
+             <Link to={'/homeworker'}>Home</Link> 
             </a>
           </li>
-      
-          <li><a class="nav-link scrollto" href="">
-          <Link to={'/viewcomplaint'}>View Complaint</Link> </a></li>
 
-          <li><a class="nav-link scrollto" href="#status">
-          <Link to={'/status'}>Update Status</Link></a></li>
+          <li class="dropdown"><a href="#"><span>Complaints</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><Link to={'/viewcomplaint'}><span>Student Complaint</span></Link> <i class="bi bi-chevron-right"></i></a>
+                
+              </li>
+              
+              <li class="dropdown"><a href="#"><Link to={'/view-staffs-complaint'}><span>Staff Complaint</span></Link> <i class="bi bi-chevron-right"></i></a>
+                
+              </li>
+            </ul>
+          </li>
+        
+
+
+          <li class="dropdown"><a href="#"><span>Update Status</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"> <Link to={'/students-accepted-complaint'}>Student Status</Link>  
+              </li>
+              <li class="dropdown"> <Link to={'/staffss-accepted-complaint'}>Staff Status</Link>  
+              </li>
+              
+             
+            </ul>
+          </li>
+
+
           <li>
             <a className="nav-link scrollto"  onClick={logout} >
               Logout

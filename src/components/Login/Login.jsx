@@ -77,19 +77,19 @@ const navigate = useNavigate()
         <img
           src="img/empty-classroom-due-coronavirus-pandemic (1).jpg"
           alt=""
-          width="1350px"
-          height="640px"
+          width="100%"
+          height="710px"
         />
       </div>
       <div className="page">
-        <div className="headingsContainer">
+       
           <h3>
             <br />
             Sign in
           </h3>
           <p>Sign in with your username and password</p>
-        </div>
-        <form onSubmit={validation}>
+      
+        <form onSubmit={validation} style={{marginTop:"-56%", zIndex:"1"}}>
           <div className="mainContainer">
             <label htmlFor="username">Your username</label>  
             <span style={{color:"red"}} > {formErrors.username? formErrors.username :""}</span>
