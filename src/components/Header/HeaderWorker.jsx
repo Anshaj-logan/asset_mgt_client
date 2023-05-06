@@ -1,8 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const HeaderWorker = () => {
-  return (
+  const navigate = useNavigate()
+  const logout = ()=>{
+    localStorage.removeItem("name")
+    localStorage.removeItem("loginId")
+    localStorage.removeItem("role")
+    localStorage.removeItem("worker_id")
+    navigate('/')
+
+  }
+  return ( 
     <header id="header" className="fixed-top d-flex align-items-cente">
     <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
       <h1 className="logo me-auto me-lg-0">
@@ -22,6 +31,11 @@ const HeaderWorker = () => {
 
           <li><a class="nav-link scrollto" href="#status">
           <Link to={'/status'}>Update Status</Link></a></li>
+          <li>
+            <a className="nav-link scrollto"  onClick={logout} >
+              Logout
+            </a>
+          </li>
 
           
 

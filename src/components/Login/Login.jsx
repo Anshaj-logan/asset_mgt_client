@@ -1,12 +1,13 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 
 const Login = () => {
   const [Input, setInput] = useState({
     username: "",
     password: "",
   });
-
+const navigate = useNavigate()
   const [formErrors, setformErrors] = useState({})
   const [isSubmit, setIssubmit] = useState(false)
 
@@ -34,8 +35,35 @@ const Login = () => {
     setformErrors(validate(Input))
     setIssubmit(true)
     if(Object.keys(formErrors).length === 0 && isSubmit){
-      axios.post("http://localhost:2000/api/login/",Input).then((data)=>{
-        console.log(data);
+      axios.post("http://localhost:2000/api/login/",Input).then((response)=>{
+        console.log(response);
+        if (response.data.success === true) {
+          if (response.data.role === "1") {
+            localStorage.setItem("name", response.data.username)
+            localStorage.setItem("loginId", response.data.login_id)
+            localStorage.setItem("role", response.data.role)
+            localStorage.setItem("staff_id", response.data.staff_id)
+              sessionStorage.setItem("currentloggedin", response.data.name);
+              navigate("/homestaff")
+          }
+          else if (response.data.role === "3") {
+            localStorage.setItem("name", response.data.username)
+            localStorage.setItem("loginId", response.data.login_id)
+            localStorage.setItem("role", response.data.role)
+            localStorage.setItem("worker_id", response.data.worker_id)
+            sessionStorage.setItem("currentloggedin", response.data.username);
+              navigate("/homeworker")
+          }
+          else if (response.data.role === "2") {
+            console.log("jiiii");
+              localStorage.setItem("name", response.data.username)
+              localStorage.setItem("loginId", response.data.login_id)
+              localStorage.setItem("role", response.data.role)
+              localStorage.setItem("student_id", response.data.student_id)
+              sessionStorage.setItem("currentloggedin", response.data.username);
+              navigate('/homestudent')
+          }
+      }
       }).catch((err)=>{
         console.log(err);
       })

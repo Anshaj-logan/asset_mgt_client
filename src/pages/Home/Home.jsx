@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Nav from '../../components/Nav'
-import Topbar from '../../components/Topbar'
+
 import Footer from '../../components/Footer/Footer'
 // import Welcome from '../../components/Welcome'
 

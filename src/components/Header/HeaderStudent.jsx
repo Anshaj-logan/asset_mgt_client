@@ -1,7 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const HeaderStudent = () => {
+
+  const navigate = useNavigate()
+  const logout = ()=>{
+    localStorage.removeItem("name")
+    localStorage.removeItem("loginId")
+    localStorage.removeItem("role")
+    localStorage.removeItem("student_id")
+    navigate('/')
+
+  }
+
   return (
     <header id="header" className="fixed-top d-flex align-items-cente">
     <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
@@ -11,8 +22,8 @@ const HeaderStudent = () => {
       <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
           <li>
-            <a className="nav-link scrollto" href="#about" >
-             <Link to={'/about'}>Home</Link> 
+            <a className="nav-link scrollto" href="" >
+             <Link to={'/homestudent'}>Home</Link> 
             </a>
           </li>
 
@@ -31,6 +42,11 @@ const HeaderStudent = () => {
                 
               </li>
             </ul>
+          </li>
+          <li>
+            <a className="nav-link scrollto"  onClick={logout} >
+              Logout
+            </a>
           </li>
 
         </ul>

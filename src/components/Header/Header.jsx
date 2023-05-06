@@ -1,7 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate()
+  const logout = ()=>{
+    localStorage.removeItem("name")
+    localStorage.removeItem("loginId")
+    localStorage.removeItem("role")
+    localStorage.removeItem("staff_id")
+    navigate('/')
+
+  }
   return (
     <header id="header" className="fixed-top d-flex align-items-cente">
     <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
@@ -17,7 +26,7 @@ const Header = () => {
               Home
             </a>
           </li> */}
-
+ 
           <li>
             <a className="nav-link scrollto" href="#about" >
              <Link to={'/about'}>Home</Link> 
@@ -52,6 +61,11 @@ const Header = () => {
                 
               </li>
             </ul>
+          </li>
+          <li>
+            <a className="nav-link scrollto"  onClick={logout} >
+              Logout
+            </a>
           </li>
 {/*     
            */}
