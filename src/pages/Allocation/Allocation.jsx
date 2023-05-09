@@ -11,8 +11,9 @@ const Allocation = () => {
     <section id="menu" className="menu section-bg">
       <div className="container" data-aos="fade-up">
         <Alloc/>
-        <Footer/>
+        
         <Header/>
+        <Footer/>
         {/* <Grouping/> */}
         {/* <Details/> */}
 
