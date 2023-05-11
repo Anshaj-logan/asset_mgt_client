@@ -47,7 +47,7 @@ const Header = () => {
           </li>
 
           <li><a class="nav-link scrollto" href="">
-          <Link to={'/status'}>Status</Link></a></li>
+          <Link to={'/studstatus'}>Status</Link></a></li>
 
           <li><a class="nav-link scrollto" href="">
           <Link to={'/gallery'}>Gallery</Link> </a></li>

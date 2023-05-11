@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div>
 
-<section id="gallery" className="gallery" >
+<section id="gallery" className="gallery" style={{height:"100vh"}} >
 
          <Gall/>
                 </section>
